@@ -1,36 +1,30 @@
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
-}
-
-header {
+/* Styles for the header */
+.header {
     background-color: #3498db;
     color: #fff;
     text-align: center;
     padding: 10px;
 }
 
-nav ul {
+/* Styles for the navigation */
+.navbar ul {
     list-style: none;
     padding: 0;
 }
 
-nav ul li {
+.navbar ul li {
     display: inline;
     margin-right: 15px;
 }
 
-nav ul li a {
+.navbar ul li a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
 }
 
-
-section {
+/* Styles for the main section */
+.main-content {
     position: relative;
     padding: 20px;
     max-width: 800px;
@@ -41,13 +35,13 @@ section {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-section::before {
+.main-content::before {
     content: "";
-    background-image: url('backgroundwesite.jpg'); /* Replace 'background-image.jpg' with the actual image file path */
+    background-image: url('greybost.jpg'); 
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -56,10 +50,44 @@ section::before {
     z-index: -1; /* Position the pseudo-element behind the content */
 }
 
-
-footer {
+/* Styles for the footer */
+.footer {
     background-color: #3498db;
     color: #fff;
     text-align: center;
     padding: 0px;
 }
+/* Styles for individual service items */
+#financial-planning.common-styling,
+#business-planning.common-styling,
+#tax-planning.common-styling,
+#investment-management.common-styling {
+    /* Common styles for all service items */
+    font-weight: bold;
+}
+.logo {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
+
+.bio-image {
+    width: 100px; 
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Add spacing between the image and text */
+    float: left; /* Float the images to the left of the text */
+    /* Add any other desired styles */
+}
+.image-container {
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+}
+
+.large-photo {
+    width: 50%;
+    height: 100%;
+    display: block;
+    /* Any other styles */
+}
+

@@ -1,7 +1,3 @@
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,9 +16,9 @@
 </script>
 </head>
 <body>
-    <header>
-        <h1><img src="stallion.jpg" width="80" height="80" alt="Logo">Pegasus</h1>
-        <nav>
+    <header class="header">
+        <h1><img src="horse-icon-horse.jpg" width="80" height="80" class="logo" alt="Logo">Pegasus</h1>
+        <nav class="navbar">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="services.html">Our Services</a></li>
@@ -31,7 +27,7 @@
             </ul>
         </nav>
     </header>
-    <section>
+    <section class="main-content">
         <h2>What makes us the best?</h2>
 <p>Here at Pegasus, we pride ourselves on being the best financial institution in the state of South Carolina because of our trustworthiness, transparency, and competence when it comes to your greatest
 assets.
@@ -44,8 +40,35 @@ Some of the areas that separate us from the rest of the pack include:</p>
 <li>Client-centric approach</li>
 </ul>
 </section>
-    <footer>
-        <p>&copy; 2023 Pegasus Financial Services</p>
-    </footer>
+<footer class="footer">
+    <p>&copy; 2023 Pegasus Financial Services</p>
+    
+    <!-- Survey Form -->
+    <div class="survey">
+        <h3>Survey</h3>
+        <form id="surveyForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required><br><br>
+
+            <label for="service">Interested in:</label>
+            <select id="service" name="service" required>
+                <option value="">Select a service</option>
+                <option value="Financial Planning">Financial Planning</option>
+                <option value="Business Planning">Business Planning</option>
+                <option value="Tax Planning">Tax Planning</option>
+                <option value="Investment Management">Investment Management</option>
+            </select><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</footer>
+<script src"validation.js></script>
 </body>
 </html>

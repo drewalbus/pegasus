@@ -16,9 +16,9 @@
 </script>
 </head>
 <body>
-    <header>
-        <h1><img src="stallion.jpg" width="80" height="80" alt="Logo">Pegasus</h1>
-        <nav>
+    <header class="header">
+        <h1><img src="horse-icon-horse.jpg" width="80" height="80" class="logo" alt="Logo">Pegasus</h1>
+        <nav class="navbar">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="services.html">Our Services</a></li>
@@ -27,18 +27,43 @@
             </ul>
         </nav>
     </header>
-    <section>
+    <section class="main-content">
         <h2>Our services</h2>
-        <p>Financial Planning - One of the most important areas of your financial well-being, our experienced financial planners and analysts provide a customizable roadmap. Whether you are trying to finance your children's education, buying a home, or planning for your retirement, we've got solutions for you to reach your goals.</p>
-<p>Business Planning - Running a company has challenges and requires unique approaches to get through all the hoops. Our business planning personnel are equipped with the most up-to-date knowledge and technology to make planning your business as easy as possible. We cover a wide range of business issues including expansion, cash flow management, succession planning, and financial forecasting. </p>
-<p>Tax Planning - Navigating tax laws is a complex and overwhelming process. At Pegasus, we have developed a team of CPAs from top universities and companies. We'll provide tailored tax-efficient strategies for individuals and businesses. Our analysis of your finances will ensure that you pay the lowest possible taxes because when our clients do better, we do better.</p> <p>Investment Management - Managing your investments strategically can grow your wealth to a much higher level and help you reach your financial goals. We offer portfolio analysis/construction, asset allocation strategies, monitoring, rebalancing, and customized solutions to anything that may come up. Our team works around the clock trading on multiple different exchanges and currencies.</p>
-<p>Financial Planning - One of the most important areas of your financial well-being, our experienced financial planners and analysts provide a customizable roadmap. Whether you are trying to finance your children's education, buying a home, or planning for your retirement, we've got solutions for you to reach your goals.</p>
-<p>Business Planning - Running a company has challenges and requires unique approaches to get through all the hoops. Our business planning personnel are equipped with the most up-to-date knowledge and technology to make planning vour business as easy as possible. We cover a wide range of business issues including expansion, cash flow management, succession planning, and financial forecasting.</p>
-<p>Tax Planning - Navigating tax laws is a complex and overwhelming process. At Pegasus, we have developed a team of CPAs from top universities and companies. We'll provide tailored tax-efficient strategies for individuals and businesses. Our analysis of your finances will ensure that you pay the lowest possible taxes because when our clients do better, we do better.</p> <p>Investment Management - Managing your investments strategically can grow your wealth to a much higher level and help you reach your financial goals. We offer portfolio analysis/construction, asset allocation
-Strategies, monitoring, rebalancing, and customized solutions to anything that may come up. Our team works around the clock trading on multiple different exchanges and currencies.</p>
+<p id="business-planning" class="common-styling">Business Planning - Running a company has challenges and requires unique approaches to get through all the hoops. Our business planning personnel are equipped with the most up-to-date knowledge and technology to make planning your business as easy as possible. We cover a wide range of business issues including expansion, cash flow management, succession planning, and financial forecasting. </p>
+<p id="tax-planning" class="common-styling">Tax Planning - Navigating tax laws is a complex and overwhelming process. At Pegasus, we have developed a team of CPAs from top universities and companies. We'll provide tailored tax-efficient strategies for individuals and businesses. Our analysis of your finances will ensure that you pay the lowest possible taxes because when our clients do better, we do better.</p> 
+<p id="investment-management" class="common-styling">Investment Management - Managing your investments strategically can grow your wealth to a much higher level and help you reach your financial goals. We offer portfolio analysis/construction, asset allocation strategies, monitoring, rebalancing, and customized solutions to anything that may come up. Our team works around the clock trading on multiple different exchanges and currencies.</p>
+<p id="financial-planning" class="common-styling">Financial Planning - One of the most important areas of your financial well-being, our experienced financial planners and analysts provide a customizable roadmap. Whether you are trying to finance your children's education, buying a home, or planning for your retirement, we've got solutions for you to reach your goals.</p>
     </section>
-    <footer>
+    <footer class="footer">
         <p>&copy; 2023 Pegasus Financial Services</p>
-    </footer>
-</body>
-</html>
+    
+            
+            <!-- Survey Form -->
+            <div class="survey">
+                <h3>Survey</h3>
+                <form id="surveyForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+        
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+        
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required><br><br>
+        
+                    <label for="service">Interested in:</label>
+                    <select id="service" name="service" required>
+                        <option value="">Select a service</option>
+                        <option value="Financial Planning">Financial Planning</option>
+                        <option value="Business Planning">Business Planning</option>
+                        <option value="Tax Planning">Tax Planning</option>
+                        <option value="Investment Management">Investment Management</option>
+                    </select><br><br>
+        
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </footer>
+        <script src"validation.js></script>
+        </body>
+        </html>
